@@ -1,0 +1,236 @@
+Section A: Variable Initialization and Scope
+Question
+public class Main {
+    public static void main(String[] args) {
+        int x = 5;
+        {
+            int x = 10;
+            System.out.println(x);
+        }
+        System.out.println(x);
+    }
+}
+Task: Identify and explain the error or output.
+
+Question
+public class Main {
+    static int x;
+    public static void main(String[] args) {
+        System.out.println(x);
+    }
+}
+Task: Predict the output and explain the default value of the variable.
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        int x;
+        x = x + 1;
+        System.out.println(x);
+    }
+}
+Task: Identify the issue and explain why it occurs.
+
+
+
+
+Section B: Type Promotion and Casting
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        int a = 130;
+        byte b = (byte) a;
+        System.out.println(b);
+    }
+}
+Task: Explain the output and the concept of overflow.
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        float f = 1 / 2;
+        System.out.println(f);
+    }
+}
+Task: Explain the output and discuss implicit type promotion.
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        char c = 'A';
+        int i = c * 2;
+        System.out.println(i);
+    }
+}
+Task: Predict the output and explain the operation.
+
+
+
+
+Section C: Logical Traps
+Question
+public class Main {
+    public static void main(String[] args) {
+        int x = 10;
+        System.out.println(x == 10 ? "YES" : x = 20);
+    }
+}
+Task: Identify the error or output and explain.
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        int a = 5;
+        System.out.println((a = 7) == 5);
+        System.out.println(a);
+    }
+}
+Task: Predict the output of both System.out.println statements.
+
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        boolean b = true && false & true | false;
+        System.out.println(b);
+    }
+}
+Task: Predict the output and explain operator precedence.
+
+
+
+Section D: Advanced Behavior
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        long l = 12345678910L;
+        int i = (int) l;
+        System.out.println(i);
+    }
+}
+Task: Explain the output and discuss data loss during casting.
+
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        final int x = 10;
+        int[] arr = new int[x];
+        System.out.println(arr.length);
+    }
+}
+Task: Explain why this code is valid.
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        double d = 0.0 / 0.0;
+        System.out.println(d);
+    }
+}
+Task: Predict the output and explain the concept of "Not a Number" (NaN).
+
+
+
+Section E: Bonus Challenges
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        Integer a = 1000, b = 1000;
+        System.out.println(a == b);
+        System.out.println(a.equals(b));
+    }
+}
+Task: Explain the behavior of == and .equals for wrapper classes.
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        int x = 5;
+        System.out.println(x + x++);
+    }
+}
+Task: Predict the output and explain the evaluation order of expressions.
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        String str = null;
+        System.out.println(str + 5);
+    }
+}
+Task: Predict the output and discuss how null behaves in concatenation.
+
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(10 / 0);
+    }
+}
+Task: Predict the output and explain why it differs for integer and floating-point division by zero.
+
+
+
+
+Section F: Debug and Fix
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        short s1 = 10, s2 = 20;
+        short s3 = s1 + s2;
+        System.out.println(s3);
+    }
+}
+Task: Debug the code and fix the error.
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        double d1 = 0.1, d2 = 0.2;
+        System.out.println(d1 + d2 == 0.3);
+    }
+}
+Task: Explain the behavior of floating-point arithmetic in Java.
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 0;
+        System.out.println(a / b);
+    }
+}
+Task: Predict the exception and explain.
+
+
+Question
+public class Main {
+    public static void main(String[] args) {
+        byte b = 127;
+        b++;
+        System.out.println(b);
+    }
+}
+Task: Predict the output and explain the overflow behavior.
+
+
+
+
+
+
+
